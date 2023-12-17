@@ -123,8 +123,7 @@ If sheetNameMonth <> "4月" Then
         Dim cNum
         cNum = Val(reg.Execute(c.FormulaR1C1)(0).Value) 'c.FormulaR1C1でｃ(AC6)の座標。つまりAC6のときはAC6の数式を取得して、設定したパターンとすり合わせる
         'RC[-○○]/RC[-1]の○○の部分を取得して、その数値をcNumに代入
-'↑これです、ここがわからないのです。やることはわかっていても原理が追い付かないのです。
-        'Debug.Print (c.FormulaR1C1)
+
         'Debug.Print reg.Execute(c.FormulaR1C1)(0)
         
         cNum = cNum + 1
